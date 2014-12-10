@@ -29,10 +29,8 @@ directory "/opt/webapps" do
   action :create
 end
 
-# use cookbook_file here in case customers don't have internet access
-# in real life, please don't ever put 65 MB files in a cookbook!
 cookbook_file "/opt/webapps/jenkins.war" do
-  source 'jenkins.war'
+  source 'http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war'
   owner 'root'
   group node['root_group']
   mode 00644
