@@ -1,41 +1,7 @@
-# wlpdemo-cookbook
+# Websphere Liberty Profile Demo Cookbook
 
-TODO: Enter the cookbook description here.
-
-## Supported Platforms
-
-TODO: List your supported platforms.
-
-## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['wlpdemo']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
-
-## Usage
-
-### wlpdemo::default
-
-Include `wlpdemo` in your node's `run_list`:
-
-```json
-{
-  "run_list": [
-    "recipe[wlpdemo::default]"
-  ]
-}
-```
+This cookbook is suitable for demo-ing Websphere Liberty Profile on Linux and AIX.
+It installs WLP and starts a server running Jenkins.
 
 ## License and Authors
 
