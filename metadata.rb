@@ -1,0 +1,11 @@
+name             'wlpdemo'
+maintainer       'Chef Software, Inc.'
+maintainer_email 'jdunn@getchef.com'
+license          'Apache 2.0'
+description      'Demonstration of IBM Websphere Liberty Profile'
+long_description 'Demonstration of IBM Websphere Liberty Profile'
+version          '1.0.0'
+
+depends 'wlp'
+supports 'redhat'
+supports 'aix'
