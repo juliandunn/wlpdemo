@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+include_recipe 'aixjava' if platform?('aix')
+
 # XXX the wlp cookbook's default recipe will still try to go out over the Internet
 # and download stuff... you may not want this if at a customer site
 include_recipe 'wlp'
@@ -56,6 +58,7 @@ wlp_server "jenkins" do
             }
           })
   jvmOptions [ "-Djava.net.ipv4=true" ]
+  serverEnv "JAVA_HOME" => "/usr/java71_64" if platform?('aix')
   bootstrapProperties "default.http.port" => "9080", "default.https.port" => "9443"
   action [:create, :start]
 end

@@ -6,6 +6,7 @@ description      'Demonstration of IBM Websphere Liberty Profile'
 long_description 'Demonstration of IBM Websphere Liberty Profile'
 version          '1.0.0'
 
+depends 'aixjava'
 depends 'wlp'
 supports 'redhat'
 supports 'aix'
