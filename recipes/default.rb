@@ -29,7 +29,7 @@ directory "/opt/webapps" do
   action :create
 end
 
-cookbook_file "/opt/webapps/jenkins.war" do
+remote_file "/opt/webapps/jenkins.war" do
   source 'http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war'
   owner 'root'
   group node['root_group']
